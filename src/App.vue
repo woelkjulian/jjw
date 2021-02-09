@@ -1,29 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <NavigationBar />
+    <LandingPage />
+    <BandInfo />
+    <GigInfo />
+    <MediaCollection />
+    <FooterBar />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import NavigationBar from './components/NavigationBar.vue';
+import LandingPage from './components/LandingPage.vue';
+import BandInfo from './components/BandInfo.vue';
+import GigInfo from './components/GigInfo.vue';
+import MediaCollection from './components/MediaCollection.vue';
+import FooterBar from './components/FooterBar.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    NavigationBar,
+    LandingPage,
+    BandInfo,
+    GigInfo,
+    MediaCollection,
+    FooterBar,
   },
 })
 export default class App extends Vue {}
 </script>
 
 <style lang="scss">
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
