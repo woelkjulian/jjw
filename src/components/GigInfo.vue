@@ -24,6 +24,15 @@ export default class GigInfo extends Vue {}
 
   &__date {
     flex: 1 0 auto;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex: 1 0 50%;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      flex: 1 0 100%;
+    }
+
     border: solid 1px black;
     font-size: 2em;
   }

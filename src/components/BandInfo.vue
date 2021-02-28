@@ -16,17 +16,25 @@ export default class BandInfo extends Vue {}
 
 <style scoped lang="scss">
 .band {
-  display: flex;
   flex-direction: row;
+
+  &__member {
+    flex: 1 0 auto;
+    border: solid 1px black;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex: 1 0 50%;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      flex: 1 0 100%;
+    }
+  }
+  display: flex;
   height: 100%;
   flex-wrap: wrap;
   text-align: center;
   font-size: 2em;
   background-color: wheat;
-
-  &__member {
-    flex: 1 0 45%;
-    border: solid 1px black;
-  }
 }
 </style>

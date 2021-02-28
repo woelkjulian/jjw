@@ -21,7 +21,7 @@ export default class MediaCollection extends Vue {}
   background-color: wheat;
 
   &__audio {
-    flex: 1 0 33%;
+    flex: 1 0 auto;
     font-size: 2em;
     padding: 2em;
   }
