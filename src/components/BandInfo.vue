@@ -19,11 +19,11 @@ export default class BandInfo extends Vue {}
   flex-direction: row;
 
   &__member {
-    flex: 1 0 auto;
+    flex: 1 0 20%;
     border: solid 1px black;
 
     @media (max-width: $breakpoint-tablet) {
-      flex: 1 0 50%;
+      flex: 1 0 40%;
     }
 
     @media (max-width: $breakpoint-mobile) {
