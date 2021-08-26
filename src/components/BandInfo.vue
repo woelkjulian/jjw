@@ -16,7 +16,13 @@ export default class BandInfo extends Vue {}
 
 <style scoped lang="scss">
 .band {
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  background-color: wheat;
 
   &__member {
     flex: 1 0 20%;
@@ -30,11 +36,5 @@ export default class BandInfo extends Vue {}
       flex: 1 0 100%;
     }
   }
-  display: flex;
-  height: 100%;
-  flex-wrap: wrap;
-  text-align: center;
-  font-size: 2em;
-  background-color: wheat;
 }
 </style>
